@@ -46,10 +46,7 @@ body {
   float: left;
   position: absolute;
   z-index: 10;
-  top: 140px;
-  left: 450px;
+  top: 160px;
+  left: 520px;
   z-index: 10;
-}
-* {
-  outline: red 1px solid;
 }
