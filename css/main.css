@@ -35,6 +35,10 @@ body {
 .ryu-throwing {
   background-image: url('../images/ryu-throwing-hadouken.png');
 }
+.ryu-cool {
+  background-image: url('../images/ryu-cool.gif');
+}
+
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
   background-repeat: no-repeat;
 }
@@ -49,4 +53,12 @@ body {
   top: 160px;
   left: 520px;
   z-index: 10;
+}
+.brought-by {
+  font-family: sans-serif;
+  margin-top: 250;
+  border-top: 400;
+}
+.how-to, p {
+  font-family: sans-serif;
 }
