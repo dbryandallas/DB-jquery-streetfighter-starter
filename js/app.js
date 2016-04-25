@@ -10,20 +10,27 @@ $(document).ready(function() {
   .mousedown(function() {
   playHadouken();
   $('.ryu-ready').hide();
+  $('.ryu-still').hide();
   $('.ryu-throwing').show();
-  $('.hadouken').show();
+
+  //$('.hadouken').show();
   $('.hadouken').finish().show().animate(
             {'left': '1020px'},
             500,
             function(){
-                $(this).hide();
+                //$(this).hide();
                 $(this).css('left', '520px');
-            });
+                $(this).stop();
+                $(this).hide();
+                //$(this).css('left', '-212px');
+           });
   // animate hadouken to the right of the screen
   })
   .mouseup(function() {
-  $('.ryu-throwing').hide();
-  $('.ryu-ready').show();
+    $('.ryu-action').hide();
+    $('.ryu-still').hide();
+    $('.ryu-throwing').hide();
+    $('.ryu-ready').show();
   });   
 
   function playHadouken () {
